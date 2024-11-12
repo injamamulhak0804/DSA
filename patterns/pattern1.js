@@ -226,3 +226,66 @@
 // }
 
 // patternO(5)
+
+
+// function patternP(n){
+//     for(let row = 1; row <= n; row++){
+//         let print = ""
+//         for(let space = 1; space <= row - 1; space++){
+//             print+=" "
+//         }
+//         for(let star = 1; star<= n - (row - 1); star++){
+//             print+= " *"
+//         }
+//         console.log(print)
+//     }
+//     for(let row = 1; row <= n; row++){
+//         let print = ""
+//         for(let space = 1; space <= n - row; space++){
+//             print+="-"
+//         }
+//         for(let star = 1; star<= row; star++){
+//             print+= " *"
+//         }
+//         console.log(print)
+//     }
+// }
+// patternP(5)
+
+
+// function patternQ(n){
+//     for(let row = 0; row <= n; row++){
+//         let print = ""
+//         for(let space = 1; space <= n - row; space++){
+//             print+= " "
+//         }
+//         for(let star = 1; star <= (row*2) - 1; star++){
+//            if(star==1 || star == (row*2) - 1 || row == n){
+//             print+="*"
+//            }else{
+//             print+= " "
+//            }
+//         }
+//         console.log(print);
+//     }
+// }
+// patternQ(5)
+
+
+function patternR(n){
+    for(let row = n; row >= 1; row--){
+        let print = ""
+        for(space = 1; space <= n - row; space++){
+            print+= " "
+        }
+        for(let star = 1; star <= 2 * row - 1; star++){
+            if(star == 1 || star == 2 * row - 1 || row == n){
+                print+="*"
+            }else{
+                print+=" "
+            }
+        }
+        console.log(print); 
+    }
+}
+patternR(5)
