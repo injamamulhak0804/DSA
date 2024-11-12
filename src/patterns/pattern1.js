@@ -272,20 +272,81 @@
 // patternQ(5)
 
 
-function patternR(n){
-    for(let row = n; row >= 1; row--){
-        let print = ""
-        for(space = 1; space <= n - row; space++){
-            print+= " "
-        }
-        for(let star = 1; star <= 2 * row - 1; star++){
-            if(star == 1 || star == 2 * row - 1 || row == n){
-                print+="*"
-            }else{
-                print+=" "
-            }
-        }
-        console.log(print); 
-    }
-}
-patternR(5)
+// function patternR(n){
+//     for(let row = n; row >= 1; row--){
+//         let print = ""
+//         for(space = 1; space <= n - row; space++){
+//             print+= "-"
+//         }
+//         for(let star = 1; star <= 2 * row - 1; star++){
+//             if(star == 1 || star == 2 * row - 1 || row == n){
+//                 print+="*"
+//             }else{
+//                 print+=" "
+//             }
+//         }
+//         console.log(print); 
+//     }
+// }
+// patternR(5)
+
+// function patternS(n){
+//     for(let row = 1; row <= n; row++){
+//         let print = ""
+//         for(space = 1; space <= n - row; space++){
+//             print+= " "
+//         }
+//         for(let star = 1; star <= 2 * row - 1; star++){
+//             if(star == 1 || star == 2 * row - 1){
+//                 print+= "*"
+//             }else{
+//                 print+=" "
+//             }
+//         }
+//         console.log(print); 
+//     }
+//     for(let row = n; row >= 1; row--){
+//         let print = ""
+//         for(space = 1; space <= n - row; space++){
+//             print+= " "
+//         }
+//         for(let star = 1; star <= 2 * row - 1; star++){
+//             if(star == 1 || star == 2 * row - 1){
+//                 print+= "*"
+//             }else{
+//                 print+=" "
+//             }
+//         }
+//         console.log(print); 
+//     }
+// }
+// patternS(5)
+
+// function PatterT(n){
+//     for(let row = 1; row <= n; row++){
+//         let print=""
+//         for(let col = 1; col <= n; col++){
+//             if(row == 1 || col==1 && row%2!=0|| col==n&&row%2!=0){
+//                 print+="*"
+//             }else{
+//                 print+=" "
+//             }
+//         }
+//         console.log(print);   
+//     }
+//     for(let row = 2; row <= n; row++){
+//         let print=""
+//         for(let col = 1; col <= n; col++){
+//             if(row == n ||col==1 && row%2!=0|| col==n&&row%2!=0){
+//                 print+="*"
+//             }else{
+//                 print+=" "
+//             }
+//         }
+//         console.log(print);   
+//     }
+
+// }
+// PatterT(5)
+
+
