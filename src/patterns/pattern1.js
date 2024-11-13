@@ -350,3 +350,20 @@
 // PatterT(5)
 
 
+// function patternV(n){
+//     for(let row = 1; row <= n*2; row++){
+//         let print=""
+//         let rowChange = row > n ? (n*2)-(row-1) : row 
+//         for(let col = 1; col<= n*2; col++){
+//             if(col <= n - rowChange + 1 || col >= n + rowChange - 1){
+//                 print+= "*"
+//             }else{
+//                 print+=" "
+//             }
+//         }
+//         console.log(print);
+        
+//     }
+// }
+// patternV(5)
+
