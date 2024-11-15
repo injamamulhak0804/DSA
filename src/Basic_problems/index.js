@@ -102,3 +102,119 @@
 //     return String(num).split("").reverse().join('')
 // }
 // console.log(reverseNumber(123));
+
+// 11.
+
+// function ProductOfDigit(num){
+//     const n = String(num).split('')
+//     return n.reduce((acc, curr)=> acc * curr,1)
+// }
+// console.log(ProductOfDigit(1342));
+
+// 12. 
+
+// function SumInGivenRange(n1, n2){
+//     let sum = 0
+//     for(let i = n1; i <= n2; i++){
+//         sum +=i
+//     }
+//     return sum
+// }
+// console.log(SumInGivenRange(1, 5));
+
+// 13.
+// function sumOfnNatural(n){
+//     let sum = 0
+//     for(let i = 1; i <= n; i++){
+//         sum+=i
+//     }
+//     return sum
+// }
+// console.log(sumOfnNatural(5));
+
+// 14.
+// function PrimeOrNot(num){
+//     let divisor = 0
+//     for(let i = 1; i <= num; i++){
+//         if(num%i == 0){
+//             divisor+=1
+//         }
+//     }
+//     if(divisor == 2){
+//         return "The given number is Prime"
+//     }else{
+//         return "The given number is not a prime"
+//     }
+// }
+// console.log(PrimeOrNot(93));
+
+// 15.
+// function Power(base, sup){
+//     return base**sup
+// }
+// console.log(Power(2,3));
+
+// 16.
+// function Amstrong(num){
+//     let sum = 0
+//     let n = num
+//     let sup = String(num).split('').length
+//     while(num > 0){
+//         const r = num%10;
+//         sum += r**sup
+//         num = Math.floor(num/10)
+//     }
+//     if(sum==n)return "Given number is Amstrong"
+//     else return "Given number is not a Amstrong"
+// }
+// console.log(Amstrong(145));
+
+// 17. 
+// function strongNum(num){
+//     let sum = 0
+//     let same = num
+//     while(num > 0){
+//         let fact = 1
+//         let r = num%10;
+//         for(let i = 1; i <= r; i++){
+//             fact *= i
+//         }
+//         sum+=fact
+//         num = Math.floor(num/10)
+//     }
+//     if(same == sum) return "It's a Strong Number"
+//     else return "It's Not a Strong Number"
+// }
+// console.log(strongNum(40585));
+
+// 18.
+// function ToggleString(str){
+//     let result = "";
+//     for(let i = 0; i <= str.length - 1; i++){
+//         if(/[A-Z]/.test(str[i])){
+//             result += str[i].toLowerCase()
+//         }else{
+//             result += str[i].toUpperCase()
+//         }
+//     }
+//     return result
+    
+// }
+// console.log(ToggleString("ApPle"));
+
+// 19.
+// function palindrome(str){
+//     const res = str.split("").reverse().join("")    
+//     if(res == str) return "It's a Palindrome"
+//     else return "It's not a palindrome"
+    
+// }
+// console.log(palindrome("mom")); 
+
+// 20.
+// function reverseStr(str){
+//     return str.split("").reverse().join("")    
+// }
+// console.log(reverseStr("kumara"))
+
+
