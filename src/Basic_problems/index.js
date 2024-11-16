@@ -1,7 +1,7 @@
 // Solving some Basic Problems 
+// Question=> link: https://www.youtube.com/watch?v=ibtro7G63CI
 
 // 1.  Even or Odd
-
 // function OddorEven(n){
 //     if(n>=0){
 //     if(n%2==0) return "Even";
@@ -339,9 +339,67 @@
 //     return arr.sort()
 // }
 
-function Sort1(arr){
-        
-}
+// function Sort1(arr){
+//     for(let i = 0; i< arr.length -1; i++){
+//         for(let j = i + 1; j < arr.length; j++){
+//             if(arr[i] > arr[j]){
+//                 let c = arr[i]
+//                 arr[i] = arr[j]
+//                 arr[j] = c
+//             }
+//         }
+//     }
+//     console.log(arr);  
+// }
 
-console.log(Sort([45,32,67,12,89,12,1,3,2]))
+// console.log(Sort1([3, 1, 2]))
 
+
+// .28 
+// function sumofPositive(arr){
+//     return arr.filter((ele)=> ele > 0).reduce((acc, curr)=> acc += curr, 0)
+// }
+
+// function sumofPositive1(arr){
+//     let sum = 0
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > 0){
+//             sum += arr[i]
+//         }
+//     }
+//     return sum
+// }
+
+// console.log(sumofPositive1([1,-2,3,4]));
+
+// 29. 
+
+// function MaxNumber(arr){    
+//     return Math.max(...arr)
+// }
+
+
+// function MaxNumber(arr){
+//     let max = arr[0]
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] > max) {
+//             max = arr[i]
+//         }
+//     }
+//     return max
+// }
+
+// function MaxNumber(arr){
+//     return arr.sort()[arr.length - 1] 
+// }
+
+// console.log(MaxNumber([13, 34, 31, 56, 12, 50]));
+
+
+// 30. 
+
+
+// function secondLargestNo(arr){
+//     return arr.slice().sort()[arr.length - 2]
+// }
+// console.log(secondLargestNo([13, 34, 31, 56, 12, 50]));
