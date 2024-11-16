@@ -218,3 +218,130 @@
 // console.log(reverseStr("kumara"))
 
 
+// 21.
+// function sumOfnumInStr(str){
+//     const num = str.split('').filter((i)=> /\d/.test(i) ? i : "")
+//     let sum = 0
+    
+//    let myFn = num => Number(num)
+//    let intArr = Array.from(num, myFn)
+   
+//     for(let i = 0; i < intArr.length; i++){
+//         sum += intArr[i]
+//     }
+//     return sum
+    
+// }
+
+
+// function sumOfnumInStr(str){
+//     let sum = 0
+//     for(let i = 0; i< str.length; i++){
+//         if(str[i]>= '0' && str[i] <= '9'){
+//             sum += Number(str[i]) 
+//         }
+//     }
+//     return sum  
+// }
+
+// console.log(sumOfnumInStr("j1aA2m34233am"));
+
+// 22. 
+// function palindromeNumber(num){
+//     return String(num).split("").reverse().join("") == num ? "palindrome" : "not palindrome"
+// }
+
+// function palindromeNumber1(num){
+//     let rev = ""
+//     let actual_str = num
+//     while(num > 0){
+//         let r = num%10;
+//         rev+=r 
+//         num = Math.floor(num/10)
+//     }    
+//     if(rev == actual_str) return "It's a palindrome"
+//     else return "Not a palindrome"
+// }
+// console.log(palindromeNumber1(909));
+
+// 23. 
+
+// function countUppercase(str){
+//     let count = 0
+//     str.split("").forEach(ele => /[A-Z]/.test(ele) && count++);
+//     return count
+// }
+
+// function countUppercase1(str){
+//     let count = 0
+//     for(let i = 0; i < str.length; i++){        
+//         if(str[i] >= 'A' && str[i] <= 'Z'){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// console.log(countUppercase1("AlPLeS"));
+
+
+// 24. 
+
+// function reverseArray(str){
+//     return str.reverse()
+// }
+
+// function reverseArray(str){
+//     let reverse_arr = []
+//     for(let i = str.length - 1; i >= 0; i--){
+//         reverse_arr.push(str[i])
+//     }
+//     return reverse_arr;   
+// }
+
+// console.log(reverseArray(["appale", "orange", "banana"]));
+
+// 25. 
+
+// function SearchEle(arr, find){
+//     let res = arr.findIndex((ele, idx)=>ele == find) 
+//     return res
+// }
+
+// function SearchEle1(arr, find){
+//     let idx = 0
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] == find){
+//             return "index of given value is: " + i
+//         }
+//     }
+// }
+// console.log(SearchEle1(["apple", "orange", "grapes", "banana", "fig"], "fig"))
+
+// 26. 
+
+// function SumOfEle(arr){
+//     return arr.reduce((acc, curr)=> acc+= curr, 0)
+// }
+
+// function SumOfEle1(arr){
+//     let sum = 0
+//     for(let i = 0;  i < arr.length; i++){
+//         sum+=arr[i]
+//     }
+//     return sum
+// }
+
+// console.log(SumOfEle1([1,2,4]));
+
+// 27. 
+
+// function Sort(arr){
+//     return arr.sort()
+// }
+
+function Sort1(arr){
+        
+}
+
+console.log(Sort([45,32,67,12,89,12,1,3,2]))
+
