@@ -367,3 +367,27 @@
 // }
 // patternV(5)
 
+// solving Alphabets
+
+// 1. 
+
+// function pattern(n){
+//     for(let row = 1; row <= n; row++){
+//         let print = ""
+//         let character = 65
+//         let no = 0
+//         for(let space = 1; space <= n - row; space++){
+//             print += " "
+//         }for(let char = 0; char < (row * 2) - 1; char++){
+//             if(char >= row){
+//                 no = no-1
+//             }else{
+//                 no = character + char
+//             }
+//             print+=String.fromCharCode(no)
+//         }
+//         console.log(print);
+        
+//     }
+// }
+// pattern(5)
