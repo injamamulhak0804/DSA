@@ -36,12 +36,52 @@
 // }
 // console.log(recursion2(3, 3));
 
-// 5. Recursion in Sum 
+// 5. Recursion in Sum and multiply  
 // function recursionSum(i, sum){
 //     if(i < 1){
-//         console.log(sum);
-//         return sum
+//         return 0
 //     }
-//     recursionSum(i - 1, sum + i)
+//     return recursionSum(i - 1, sum + i)
 // }
 // recursionSum(3, 0)
+
+// 6. Reverse an Array 
+// Double pointer
+// function recursionRevArray(l, r, arr){
+//     if(l >= r) return 
+//     let a = arr[l]
+//     arr[l] = arr[r]
+//     arr[r] = a
+//     recursionRevArray(l + 1, r - 1, arr)
+// }
+// let arr = [1,2,4, 5, 6, 7]
+// recursionRevArray(0, 5, arr)
+// console.log(arr);
+
+
+// single pointer
+
+// function recursionDP(i, n, arr){
+//     if(i >= Math.floor( n/2)) return 
+//     let temp = arr[i];
+//     arr[i] = arr[n - 1 - i]
+//     arr[n - i - 1] = temp 
+//     recursionDP(i + 1, n , arr)
+// }
+// let arr = [1,2,3]
+// recursionDP(0, 3, arr)
+
+// console.log(arr);
+
+
+// 8.  Recursion for Fibbonacci
+
+function Fibbonacci(num){
+    if(num <= 1)
+        return num 
+    let last = Fibbonacci(num - 1)
+    let sLast = Fibbonacci(num - 2)
+    return last + sLast
+}
+console.log(Fibbonacci(4));
+
