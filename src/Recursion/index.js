@@ -76,12 +76,40 @@
 
 // 8.  Recursion for Fibbonacci
 
-function Fibbonacci(num){
-    if(num <= 1)
-        return num 
-    let last = Fibbonacci(num - 1)
-    let sLast = Fibbonacci(num - 2)
-    return last + sLast
-}
-console.log(Fibbonacci(4));
+// function Fibbonacci(num){
+//     if(num <= 1)
+//         return num 
+//     let last = Fibbonacci(num - 1)
+//     let sLast = Fibbonacci(num - 2)
+//     return last + sLast
+// }
+// console.log(Fibbonacci(4));
 
+
+// 9. Array subSequence 
+
+// function Sub(n, res = [], arr){
+//     if(n >= 1){
+//         console.log(arr);
+//         return
+//     }
+//     res.push()
+// }
+// Sub(3, [], [3,2,1,])
+
+// 10. Recursion to print subsequence
+
+function RecursionSubSequence(idx, list, arr, n){
+    if(idx == n){
+        console.log(list.join(" "));
+        if(list == 0) console.log([]);
+        return
+    }
+    list.push(arr[idx])
+    RecursionSubSequence(idx + 1, list, arr, n);
+    list.pop(arr[idx])
+    RecursionSubSequence(idx + 1, list, arr, n);
+}
+const array = [3,2,1]
+const list = []
+RecursionSubSequence(0, list,array, 3)
