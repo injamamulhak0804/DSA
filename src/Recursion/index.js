@@ -99,17 +99,47 @@
 
 // 10. Recursion to print subsequence
 
-function RecursionSubSequence(idx, list, arr, n){
-    if(idx == n){
-        console.log(list.join(" "));
-        if(list == 0) console.log([]);
-        return
+// function RecursionSubSequence(idx, list, arr, n){
+//     if(idx == n){
+//         console.log(list.join(" "));
+//         if(list == 0) console.log([]);
+//         return
+//     }
+//     list.push(arr[idx])
+//     RecursionSubSequence(idx + 1, list, arr, n);
+//     list.pop(arr[idx])
+//     RecursionSubSequence(idx + 1, list, arr, n);
+// }
+// const array = [3,2,1]
+// const list = []
+// RecursionSubSequence(0, list,array, 3)
+
+
+
+function printNos(n) {
+    let i = 1
+    function recursion(i){
+       if(i > n) return
+       if (i < n) {
+        process.stdout.write(i + " ");
+        } else {
+            process.stdout.write(i + ""); // For the last number, print without space
+        }
+        recursion(i + 1)
     }
-    list.push(arr[idx])
-    RecursionSubSequence(idx + 1, list, arr, n);
-    list.pop(arr[idx])
-    RecursionSubSequence(idx + 1, list, arr, n);
+    recursion(i)
 }
-const array = [3,2,1]
-const list = []
-RecursionSubSequence(0, list,array, 3)
+printNos(10)
+
+
+// function printNos(n) {
+//     function recursion(i) {
+//         if (i > n) return; 
+//         process.stdout.write(i + " ");
+//         recursion(i + 1)
+//     }
+    
+//     recursion(1);
+// }
+
+// printNos(10);

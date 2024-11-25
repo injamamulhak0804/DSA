@@ -1,3 +1,7 @@
 // require("./src/patterns/pattern1")
 // require('./src/Basic_problems/index')
-require("./src/Recursion/index")
+// require("./src/Recursion/index")
+// require("./src/Hashing/index")
+// require("./src/Sorting/SelectionSort/index")
+// require("./src/Sorting/BubleSort")
+// require("./src/Sorting/insertionSort")
