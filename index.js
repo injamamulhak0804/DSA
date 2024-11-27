@@ -4,4 +4,5 @@
 // require("./src/Hashing/index")
 // require("./src/Sorting/SelectionSort/index")
 // require("./src/Sorting/BubleSort")
-require("./src/Sorting/insertionSort")
+// require("./src/Sorting/insertionSort")
+require("./src/Sorting/mergeSort/mergeSort")
