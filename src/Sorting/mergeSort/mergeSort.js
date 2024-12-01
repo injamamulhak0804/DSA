@@ -20,7 +20,7 @@ function Merge(arr, low, mid, high){
         right++
     }
     for (let i = 0; i < temp.length; i++) {
-        arr[i] = temp[i];
+        arr[low + i] = temp[i];
     }
 }
 const MergeSort = (arr, low, high) =>{

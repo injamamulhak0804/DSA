@@ -5,4 +5,5 @@
 // require("./src/Sorting/SelectionSort/index")
 // require("./src/Sorting/BubleSort")
 // require("./src/Sorting/insertionSort")
-require("./src/Sorting/mergeSort/mergeSort")
+// require("./src/Sorting/mergeSort/mergeSort")
+require("./src/Array/Easy/index.js")
