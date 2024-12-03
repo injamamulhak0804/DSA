@@ -69,18 +69,18 @@
 // }
 // LRotateByD([1,2,3,4,5],4)
 
-function RRotateByD(nums, k){
-    let n = nums.length    
-    k = k%n
-    let temp = nums.slice(n - k);
+// function RRotateByD(nums, k){
+//     let n = nums.length    
+//     k = k%n
+//     let temp = nums.slice(n - k);
     
-    for (let i = n - 1; i >= k; i--) {
-        nums[i] = nums[i - k];
-    }
-    for(let i = 0 ; i < k; i++){
-        nums[i] =  temp[i]
-    }
-    console.log(nums);
+//     for (let i = n - 1; i >= k; i--) {
+//         nums[i] = nums[i - k];
+//     }
+//     for(let i = 0 ; i < k; i++){
+//         nums[i] =  temp[i]
+//     }
+//     console.log(nums);
     
-}
-RRotateByD([1,2,3,4,5,6,7], 3)
+// }
+// RRotateByD([1,2,3,4,5,6,7], 3)
