@@ -84,3 +84,42 @@
     
 // }
 // RRotateByD([1,2,3,4,5,6,7], 3)
+
+
+// function Roate_Zero(arr){
+//     let temp = arr.filter((el)=> el !=0 )
+//     for(let i = 0; i < temp.length; i++){
+//         arr[i] = temp[i]
+//     }
+//     for(let i = temp.length; i < arr.length; i++){
+//         arr[i] = 0
+//     }
+//     return arr
+// }
+// console.log(Roate_Zero([1,0,2,0,3,0,0,7,8,2,4]))
+
+//In optimal way
+
+// function Roate_Zero(arr){
+    
+//     let j = -1 
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] == 0){
+//             j = i
+//             break
+//         }
+//     }
+//     console.log("logged", j);
+//     for(let i = j + 1; i < arr.length; i++){
+//         if(arr[i] != 0){
+//             let temp = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = temp 
+//             j++
+//         }
+//     }
+//     return arr
+// }
+// console.log(Roate_Zero([1,0,2,0,3,0,0,7,8,2,4]))
+
+
