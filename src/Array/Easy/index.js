@@ -123,3 +123,34 @@
 // console.log(Roate_Zero([1,0,2,0,3,0,0,7,8,2,4]))
 
 
+// function uniqueArray(arr1, arr2){
+//     let set = new Set()
+//     for(let i = 0; i < arr1.length; i++){
+//         set.add(arr1[i])
+//     }
+//     for(let i = 0; i < arr2.length; i++){
+//         set.add(arr2[i])
+//     }
+//     let temp = [...set].join(' ')
+//     return temp   
+// }
+
+// console.log(uniqueArray([1,2,3,4], [6,4,1,3,8]))
+
+// function IntersectionArray(arr1, arr2){
+//     let ans = []
+//     let visit = new Array(arr2.length).fill(0)
+//     for(let i = 0; i < arr1.length; i++){
+//         for(let j = 0; j < arr2.length; j++){
+//             if(arr1[i] == arr2[j] && visit[j] == 0){
+//                 ans.push(arr1[i])
+//                 visit[j] = 1
+//                 break
+//             }
+//             if(arr2[j] > arr1[i]) break
+//         }
+//     }
+//      console.log(ans);
+     
+// }
+// IntersectionArray([1,2,3,3,4,6], [2,3,3,5,6,6,7])
