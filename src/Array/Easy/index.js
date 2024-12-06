@@ -154,3 +154,86 @@
      
 // }
 // IntersectionArray([1,2,3,3,4,6], [2,3,3,5,6,6,7])
+
+// function FindNum(arr, no){
+//     let n = arr.length;
+//     let hashArr = new Array(no + 1).fill(0);
+//     for(let i = 0 ; i < n; i++){
+//         hashArr[arr[i]] = 1;
+//     }
+//     for(let i = 1; i < no; i++){
+//         if(hashArr[i] == 0){
+//             return i
+//         }
+//     }
+// }
+// console.log(FindNum([1,2,4,5], 5))
+
+// function FindNum(arr, no){
+//     let n = arr.length; 
+//     let sum = no * (no + 1) / 2
+//     const sumArr = arr.reduce((acc, curr)=> acc + curr, 0)
+//     return sum - sumArr
+// }
+// console.log(FindNum([1,2,4,5], 5))
+
+// optimkze way XOR and Sum 
+
+
+// let xor = 0
+// let xor1 = 0
+// let arr = [1,2,4,5]
+
+// for(let i = 1; i <=5 ; i++){
+//     xor = xor ^ i
+// }
+// for(let i = 0; i < arr.length; i++){
+//     xor1 = xor1 ^ arr[i]
+// }
+// console.log(xor ^ xor1)
+
+
+// function MaxConsecutiveOnes(nums){
+//     let max = 0
+//     let count = 0;
+//     for(let i = 0; i < nums.length; i++){
+//         if(nums[i] == 1){
+//             count += 1
+//             if(count > max){
+//                 max = count
+//             } 
+//         }else{
+//             count = 0
+//         }
+//     }
+//     return max;
+// }
+// console.log(MaxConsecutiveOnes([1,2,1,1,3,3,1,1,1,1,1,3,2,1,1]))
+
+// function SingleNumber(nums){
+//     return nums.reduce((acc, curr)=> acc ^ curr, 0)
+// }
+// console.log(SingleNumber([2,2,1]));
+
+// function SingleNumber(nums){
+//     let n = nums.length
+//     let max = nums.sort((a, b)=> a - b)    
+//     let hashArr = new Array(max[nums.length - 1] + 1).fill(0)
+//     for(let i = 0; i < n; i++){
+//         hashArr[nums[i]]++
+//     }
+//     console.log(hashArr);
+    
+//     for(let i = 0; i <= n; i++){
+//         if(hashArr[i] == 1){
+//             return i
+//         }
+//     }
+// }
+// console.log(SingleNumber([4,1,2,1,2]));
+
+
+function LongestSubarrayWithSumK(arr, n){
+    
+}
+LongestSubarrayWithSumK([1,2,3,1,1,2,3,4], 4)
