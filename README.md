@@ -5,6 +5,11 @@
         - tricks: always start with index 1 for patterns.
     
     - Solving 30 Basic Programming Question with multiple Approach
+    - Recursion 
+    - Hasing
+    - Array:
+        - Easy
+        - Medium
     
 - object of Object
 - mutation

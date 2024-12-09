@@ -233,7 +233,25 @@
 // console.log(SingleNumber([4,1,2,1,2]));
 
 
-function LongestSubarrayWithSumK(arr, n){
-    
-}
-LongestSubarrayWithSumK([1,2,3,1,1,2,3,4], 4)
+// function LongestSubarrayWithSumK(arr, k){
+//     let sum = arr[0]
+//     let left = 0
+//     let right = 0
+//     let maxLen = 0
+//     let n = arr.length
+//     while(right < n){
+//         while(left <= right && sum > k){
+//             sum -= arr[left]
+//             left++
+//         }
+//         if(sum == k){
+//             maxLen = Math.max(maxLen,( right - left ) + 1)
+//         }
+//         right++
+//         if(right < n) sum+=arr[right]
+//     }
+//     return maxLen
+// }
+// console.log(LongestSubarrayWithSumK([1,2,3,1,1,1,1,2,3,4], 4));
+
+
