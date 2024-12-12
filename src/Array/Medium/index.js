@@ -117,3 +117,73 @@
 //     return nums
 // }
 // console.log(SortZeroOneTwo([0,1,1,2,0]));
+
+
+// 3.Majority Element N/2 times
+
+// ------- 1. Brute
+
+// function MajoritynBy2(arr, n){
+//     let size = Math.floor(n/2 )
+//     for(let i = 0; i < n; i++){
+//         let count = 0
+//         for(let j = 0; j < n; j++){
+//             if(arr[i] == arr[j]) count++
+//         }
+//         if(count > size) {
+
+//             return arr[i]
+//         }
+//     }
+//     return -1
+// }
+// console.log(MajoritynBy2([2,2,3,3,3,3], 7));
+
+// -------------- 2. Better
+
+// function MajoritynBy2(arr, n){
+//     let size = Math.floor(n/2 )
+//     let map = new Map()
+//     for(let i = 0; i < n; i++){
+//         if(map.has(arr[i])){
+//             map.set(arr[i], map.get(arr[i]) + 1)
+//         }else{
+//             map.set(arr[i], 1)
+//         }
+//     }
+//     let entries = Array.from(map)
+//     let max = entries.reduce((max, curr)=>{
+//         return curr[1] > max[1] ? curr : max
+//     })[0]
+//     return max
+// }
+// console.log(MajoritynBy2([2,2,3,3,1,2,2], 7));
+
+
+// -------------3. OPtimal
+//Moore's Voting Algorithm
+
+
+// function MajoritynBy2(nums, n){
+//     let size = n/2 
+//     let el;
+//     let vote = 0;
+//     let count = 0
+//     for(let i = 0; i < n; i++){
+//         if(vote==0){
+//             el = nums[i]
+//             vote = 1
+//         }
+//         else if(el == nums[i]) vote++
+//         else vote--
+//     }
+
+//     for(let i = 0; i < n; i++){
+//         if(el==nums[i]) count++
+//         if(count > size) return nums[i]
+//     }
+//     return -1
+
+// }
+
+// console.log(MajoritynBy2([2,2,3,3,3,3,3,2,2], 7));
