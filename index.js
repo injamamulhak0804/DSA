@@ -7,4 +7,5 @@
 // require("./src/Sorting/insertionSort")
 // require("./src/Sorting/mergeSort/mergeSort")
 // require("./src/Array/Easy/index.js")
-require("./src/Array/Medium/index.js")
+// require("./src/Array/Medium/index.js")
+require("./src/Basic_Math/index")
